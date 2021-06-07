@@ -7,8 +7,8 @@ import requests
 @app.route('/home', methods = ['GET', 'POST'])
 def home():
     form = Form()
-    if request.method == "POST":
-        name = requests.get('http://service2:5000/name').text
-        return f"{name}"
+    if form.validate_on_submit():
+        name = requests.get('http://service2:5001/name').text
+        return render_template('index.html', form=form, name=name)
     
     return render_template('index.html', form=form)
