@@ -11,7 +11,7 @@ def lottery():
         generate = random.choice(numbers)
         winning_numbers.append(generate)
         numbers.remove(generate)
-    return winning_numbers
+    return "".join(winning_numbers)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = 5002)

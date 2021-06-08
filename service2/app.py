@@ -11,7 +11,7 @@ def ticket():
         generate = random.choice(numbers)
         lottery_ticket.append(generate)
         numbers.remove(generate)
-    return lottery_ticket
+    return "".join(lottery_ticket)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = 5001)
