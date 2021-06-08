@@ -17,9 +17,9 @@
         {% endif %}
         Previous lotteries entered:<br><br>
         {% for i in previous_tickets %}
-        Ticket: {{ previous_tickets.ticket }}<br>
-        Winning Numbers: {{ previous_tickets.winning }}<br>
-        Prize: {{ previous_tickets.prize }}<br><br>
+        Ticket: {{ i.ticket }}<br>
+        Winning Numbers: {{ i.winning }}<br>
+        Prize: {{ i.prize }}<br><br>
         {% endfor %}
     </body>
 </html>
