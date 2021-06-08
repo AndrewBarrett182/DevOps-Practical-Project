@@ -11,6 +11,7 @@ def ticket():
         generate = random.choice(numbers)
         lottery_ticket.append(generate)
         numbers.remove(generate)
+    lottery_ticket.sort()
     return jsonify({'lottery_ticket':lottery_ticket})
 
 if __name__ == '__main__':
