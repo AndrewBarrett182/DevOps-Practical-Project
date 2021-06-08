@@ -8,7 +8,7 @@ import requests
 def home():
     form = Form()
     if form.validate_on_submit():
-        name = requests.get('http://service2:5001/name').text
-        return render_template('index.html', form=form, name=name)
+        ticket = requests.get('http://service2:5001/ticket').text
+        return render_template('index.html', form=form, ticket=ticket)
     
     return render_template('index.html', form=form)
