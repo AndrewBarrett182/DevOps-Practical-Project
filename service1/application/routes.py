@@ -15,7 +15,7 @@ def home():
 
         ticket_string = ""
         for i in ticket:
-            ticket_string = ticket_string + i +","
+            ticket_string = ticket_string + str(i) +","
 
         # db.session.add(LotteryTickets(ticket = json.loads(ticket), lottery = json.loads(lottery), prize = json.loads(prize)))
         db.session.add(LotteryTickets(ticket = ticket_string))
