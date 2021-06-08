@@ -14,7 +14,7 @@ def home():
         prize = requests.post("http://service4:5003/prize", json=send).json()
 
         # db.session.add(LotteryTickets(ticket = json.loads(ticket), lottery = json.loads(lottery), prize = json.loads(prize)))
-        db.session.add(LotteryTickets(ticket = json.loads("".join(ticket))))
+        db.session.add(LotteryTickets(ticket = json.loads("".join(str(ticket)))))
         db.session.commit()
 
         previous_tickets = LotteryTickets.query.order_by(LotteryTickets.id.desc()).limit(5).all()
