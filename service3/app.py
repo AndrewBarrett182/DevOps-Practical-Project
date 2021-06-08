@@ -11,6 +11,7 @@ def lottery():
         generate = random.choice(numbers)
         winning_numbers.append(generate)
         numbers.remove(generate)
+    winning_numbers.sort()
     return jsonify({'winning_numbers':winning_numbers})
 
 if __name__ == '__main__':
