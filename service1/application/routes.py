@@ -1,5 +1,5 @@
 from application import app, db
-from flask import render_template, request
+from flask import render_template, request, json
 from application.models import Form, LotteryTickets
 import requests
 
@@ -13,10 +13,7 @@ def home():
         send = {'ticket':ticket, 'lottery':lottery}
         prize = requests.post("http://service4:5003/prize", json=send).json()
 
-        the_ticket = request.json['ticket']
-        the_lottery = request.json['lottery']
-
-        db.session.add(LotteryTickets(ticket = the_ticket, winning = the_lottery, prize = prize))
+        db.session.add(LotteryTickets(ticket = json.loads(ticket.text), lottery = json.loads(lottery.text), prize = json.loads(prize.text)))
         db.session.commit()
 
         previous_tickets = LotteryTickets.query.order_by(LotteryTickets.id.desc()).limit(5).all()
