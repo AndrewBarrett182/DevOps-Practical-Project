@@ -14,6 +14,7 @@ services:
             - service4
         environment: 
             - SECRET_KEY=${SECRET_KEY}
+            - DATABASE_URI=${DATABASE_URI}
 
     service2:
         image: abarrett/service2
