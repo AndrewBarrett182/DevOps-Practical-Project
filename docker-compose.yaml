@@ -2,6 +2,7 @@ version: '3.8'
 services:
     service1:
         image: abarrett/service1
+        container_name: service1
         build: ./service1
         ports:
             - target: 5000
@@ -16,6 +17,7 @@ services:
 
     service2:
         image: abarrett/service2
+        container_name: service2
         build: ./service2
         ports:
             - target: 5001
@@ -24,6 +26,7 @@ services:
 
     service3:
         image: abarrett/service3
+        container_name: service3
         build: ./service3
         ports:
             - target: 5002
@@ -32,6 +35,7 @@ services:
 
     service4:
         image: abarrett/service4
+        container_name: service4
         build: ./service4
         ports:
             - target: 5003
