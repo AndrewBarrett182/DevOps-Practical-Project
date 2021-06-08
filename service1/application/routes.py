@@ -13,8 +13,8 @@ def home():
         send = {'ticket':ticket, 'lottery':lottery}
         prize = requests.post("http://service4:5003/prize", json=send).json()
 
-        the_ticket = "".join(ticket)
-        the_lottery = "".join(lottery)
+        the_ticket = "".join(str(ticket))
+        the_lottery = "".join(str(lottery))
 
         db.session.add(LotteryTickets(ticket = the_ticket, winning = the_lottery, prize = prize))
         db.session.commit()
