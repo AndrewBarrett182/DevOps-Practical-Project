@@ -13,7 +13,7 @@ def home():
         send = {'ticket':ticket, 'lottery':lottery}
         prize = requests.post("http://service4:5003/prize", json=send).json()
 
-        previous_tickets = LotteryTickets.query.all()
+        previous_tickets = LotteryTickets.query.order_by(LotteryTickets.id.desc()).limit(5).all()
 
         db.session.add(LotteryTickets(ticket = ticket, winning = lottery, prize = prize))
         db.session.commit()
