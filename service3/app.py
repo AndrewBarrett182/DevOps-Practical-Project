@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 import random
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ def lottery():
         generate = random.choice(numbers)
         winning_numbers.append(generate)
         numbers.remove(generate)
-    return "".join(winning_numbers)
+    return jsonify(winning_numbers)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = 5002)
