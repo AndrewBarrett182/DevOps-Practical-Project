@@ -9,7 +9,9 @@ def home():
     form = Form()
     if form.validate_on_submit():
         ticket = requests.get('http://service2:5001/ticket').text
-        #lottery = requests.get('http://service3:5002/lottery').text
+        lottery = requests.get('http://service3:5002/lottery').text
+        send = {'ticket':ticket, 'lottery':lottery}
+        info = requests.post("http://service4:5003/prize", json=send).json
         return render_template('index.html', form=form, ticket=ticket)
     
     return render_template('index.html', form=form)
