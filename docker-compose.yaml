@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 services:
     service1:
         image: abarrett/service1
@@ -11,6 +11,8 @@ services:
             - service2
             - service3
             - service4
+        environment: 
+            - SECRET_KEY=${SECRET_KEY}
 
     service2:
         image: abarrett/service2
