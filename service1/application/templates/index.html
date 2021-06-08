@@ -8,8 +8,12 @@
                 {{ form.generate }}
             </form>
         </div>
-        {% if name %}
-        {{ ticket }} bought a lottery ticket with the numbers: 
+        {% if ticket %}
+        You bought a lottery ticket with the numbers: <br>
+        {{ ticket }} <br>
+        The winning numbers were: <br>
+        {{ lottery }} <br>
+        You Won: £{{ info }}
         {% endif %}
     </body>
 </html>
