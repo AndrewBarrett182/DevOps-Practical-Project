@@ -19,6 +19,6 @@ def home():
 
         # previous_tickets = LotteryTickets.query.order_by(LotteryTickets.id.desc()).limit(5).all()
 
-        return render_template('index.html', form=form, ticket=ticket, lottery=lottery, prize=prize, previous_tickets = previous_tickets, type = type(ticket))
+        return render_template('index.html', form=form, ticket=ticket, lottery=lottery, prize=prize, type = type(ticket))
     
     return render_template('index.html', form=form)
