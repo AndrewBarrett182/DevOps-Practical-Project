@@ -10,10 +10,16 @@
         </div>
         {% if ticket %}
         You bought a lottery ticket with the numbers: <br>
-        {{ ticket }} <br>
+        {{ ticket }} <br><br>
         The winning numbers were: <br>
-        {{ lottery }} <br>
-        You Won: £{{ prize }}
+        {{ lottery }} <br><br>
+        You Won: £{{ prize }}<br><br>
         {% endif %}
+        Previous lotteries entered:<br><br>
+        {% for i in previous_tickets %}
+        Ticket: {{ previous_tickets.ticket }}<br>
+        Winning Numbers: {{ previous_tickets.winning }}<br>
+        Prize: {{ previous_tickets.prize }}<br><br>
+        {% endfor %}
     </body>
 </html>
