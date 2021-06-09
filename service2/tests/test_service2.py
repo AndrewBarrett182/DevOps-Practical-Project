@@ -9,16 +9,16 @@ class TestBase(TestCase):
         return app
 
 
-tests = [({'lottery_ticket':[1, 2, 3, 4, 5, 6]}, {'winning_numbers':[1, 2, 3, 4, 5, 6]}, 10000), 
-         ({'lottery_ticket':[1, 2, 3, 4, 5, 6]}, {'winning_numbers':[7, 8, 9, 10, 11, 12]}, 0), 
-         ({'lottery_ticket':[1, 2, 3, 4, 5, 6]}, {'winning_numbers':[1, 2, 7, 8, 9, 10]}, 10)]
+tests = [([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], 10000), 
+         ([1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], 0), 
+         ([1, 2, 3, 4, 5, 6], [1, 2, 7, 8, 9, 10], 10)]
 
 class TestViews(TestBase):
     def test_get_ticket(self):
 
         for case in tests:
             with patch("random.choice") as r:
-                r.return_value = case[0]
+                r.return_value = {'lottery_ticket':case[0]}
                 response = self.client.get(url_for("ticket"))
                 self.assertEqual(response.status_code, 200)
-                self.assertIn(case[0], response.data.decode("utf-8"))
+                self.assertIn({'lottery_ticket':case[0]}, response.data.decode("utf-8"))
