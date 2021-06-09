@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                // pytest
-                // run for each service
-                // produce cov reports
+                sh 'bash jenkins/test.sh'
             }
         }
         stage('Build') {
