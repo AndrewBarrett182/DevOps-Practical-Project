@@ -12,7 +12,7 @@ pip3 install -r test_requirements.txt
 # pytest coverage service1
 
 cd service1
-python3 -m pytest --cov=service1
+python3 -m pytest --cov=application
 cd ..
 
 # pytest coverage service2
