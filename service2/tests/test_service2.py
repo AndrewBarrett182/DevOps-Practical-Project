@@ -15,13 +15,10 @@ tests = [({'lottery_ticket':[1, 2, 3, 4, 5, 6]}, {'winning_numbers':[1, 2, 3, 4,
 
 class TestViews(TestBase):
     def test_get_ticket(self):
-        response = self.client.get(url_for("ticket"))
-        self.assertEqual(response.status_code, 200)
-        self.assertIn(response.data.decode(), lottery_ticket)
 
-        # for case in tests:
-        #     with patch("random.choice") as r:
-        #         r.return_value = case[0]
-        #         response = self.client.get(url_for("ticket"))
-        #         self.assertEqual(response.status_code, 200)
-        #         self.assertIn(case[0], response.data.decode("utf-8"))
+        for case in tests:
+            with patch("random.choice") as r:
+                r.return_value = case[0]
+                response = self.client.get(url_for("ticket"))
+                self.assertEqual(response.status_code, 200)
+                self.assertIn(case[0], response.data.decode("utf-8"))
