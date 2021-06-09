@@ -21,4 +21,4 @@ class TestViews(TestBase):
                 r.return_value = case[0]
                 response = self.client.get(url_for("ticket"))
                 self.assertEqual(response.status_code, 200)
-                self.assertIn(case[0], response.json()['lottery_ticket'])
+                self.assertIn(case[0], response.json['lottery_ticket'])
