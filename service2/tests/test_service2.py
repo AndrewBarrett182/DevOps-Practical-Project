@@ -21,4 +21,4 @@ class TestViews(TestBase):
                 r.return_value = case[0]
                 response = self.client.get(url_for("ticket"))
                 self.assertEqual(response.status_code, 200)
-                self.assertIn("".join(str(case[0])), response.data.decode())
+                self.assertIn("[\n    1, \n    2, \n    3, \n    4, \n    5, \n    6\n  ]", response.data.decode())
