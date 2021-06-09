@@ -1,6 +1,6 @@
 from flask import url_for
 from flask_testing import TestCase
-from service2.app import app, lottery_ticket
+from service2.app import app
 from unittest.mock import patch
 
 class TestBase(TestCase):
