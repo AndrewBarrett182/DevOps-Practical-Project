@@ -24,6 +24,10 @@ class TestBase(TestCase):
 class TestViews(TestBase):
 
     def test_home_get(self):
+        response = self.client.get(url_for('home'))
+        self.assertEqual(response.status_code, 200)
+
+    def test_home_post(self):
         with requests_mock.Mocker() as m:
             m.get('http://service2:5001/ticket', json = {'lottery_ticket':[1, 2, 3, 4, 5, 6]})
             m.get('http://service3:5002/lottery', json = {'winning_numbers':[1, 2, 3, 4, 5, 6]})
