@@ -28,7 +28,7 @@ class TestViews(TestBase):
             m.get('http://service2:5001/ticket', json = {'lottery_ticket':[1, 2, 3, 4, 5, 6]})
             m.get('http://service3:5002/lottery', json = {'winning_numbers':[1, 2, 3, 4, 5, 6]})
             m.post('http://service4:5003/prize', json = 10000)
-            response = self.client.get(url_for('home'))
+            response = self.client.post(url_for('home'))
             self.assertEqual(response.status_code, 200)
             self.assertIn(b"You bought a lottery ticket with the numbers:", response.data)
             self.assertIn(b"[1, 2, 3, 4, 5, 6]", response.data)
