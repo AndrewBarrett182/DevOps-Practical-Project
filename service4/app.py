@@ -9,6 +9,7 @@ def prize():
     match = 0
     ticket = request.json['ticket']
     lottery = request.json['lottery']
+    print(ticket, lottery)
     for i in range(len(ticket)):
         if ticket[i] in lottery:
             match = match + 1
