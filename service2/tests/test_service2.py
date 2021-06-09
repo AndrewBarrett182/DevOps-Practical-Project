@@ -8,7 +8,10 @@ class TestBase(TestCase):
         app.config.update(DEBUG = True)
         return app
 
-tests = [([1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], 10000), ([1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], 0), ([1, 2, 3, 4, 5, 6], [1, 2, 7, 8, 9, 10], 10)]
+
+tests = [({'lottery_ticket':[1, 2, 3, 4, 5, 6]}, {'winning_numbers':[1, 2, 3, 4, 5, 6]}, 10000), 
+         ({'lottery_ticket':[1, 2, 3, 4, 5, 6]}, {'winning_numbers':[7, 8, 9, 10, 11, 12]}, 0), 
+         ({'lottery_ticket':[1, 2, 3, 4, 5, 6]}, {'winning_numbers':[1, 2, 7, 8, 9, 10]}, 10)]
 
 class TestViews(TestBase):
     def test_get_ticket(self):
