@@ -12,6 +12,7 @@ def prize():
     for i in range(len(ticket)):
         if ticket[i] in lottery:
             match = match + 1
+        print("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",match)
     return jsonify(prizes[match])
 
 if __name__ == '__main__':
