@@ -42,4 +42,4 @@ class TestViews(TestBase):
                 m.post('http://service4:5003/prize', json = case[2])
                 response = self.client.post(url_for('home'))
             self.assertIn(b"Ticket: [1, 2, 3, 4, 5, 6]", response.data)
-            self.assertIn(b"Ticket: [1, 5, 10, 15, 17, 20]", response.data)
+            self.assertIn(b"You bought a lottery ticket with the numbers: <br>\n        [1, 5, 10, 15, 17, 20]", response.data)
