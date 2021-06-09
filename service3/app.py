@@ -10,5 +10,4 @@ def lottery():
     winning_numbers.sort()
     return jsonify({'winning_numbers':winning_numbers})
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port = 5002)
+if __name__ == '__main__': app.run(host='0.0.0.0', port = 5002)
