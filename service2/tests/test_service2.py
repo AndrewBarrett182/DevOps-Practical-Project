@@ -17,8 +17,8 @@ class TestViews(TestBase):
     def test_get_ticket(self):
 
         for case in tests:
-            with patch("random.choice") as r:
-                r.return_value = {'lottery_ticket':case[0]}
+            with patch("lottery_ticket.sort()") as r:
+                r.return_value = case[0]
                 response = self.client.get(url_for("ticket"))
                 self.assertEqual(response.status_code, 200)
-                self.assertIn({'lottery_ticket':case[0]}, response.data.decode("utf-8"))
+                self.assertIn(case[0], response.data.decode("utf-8"))
