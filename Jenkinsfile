@@ -3,32 +3,28 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                // run test script
                 sh 'bash jenkins/test.sh'
             }
         }
         stage('Build') {
             steps {
-                // install docker and docker compose
-                // docker-compose build
+                sh 'echo build'
             }
         }
         stage('Push') {
             steps {
-                // install docker and docker compose
-                // docker-compose push
+                sh 'echo push'
             }
         }
         stage('Ansible') {
             steps {
-                // install ansible on jenkins machine for the jenkins user
-                // ansible-playbook -i inventory.yaml playbook.yaml
+                sh 'echo ansible'
             }
         }
         stage('Deploy') {
             steps {
-                // create swarm infrastructure
-                // copy over docker-compose.yaml
-                // shh: docker stack deploy --compose-file docker-compose.yaml lottery
+                sh 'echo deploy'
             }
         }
     }
