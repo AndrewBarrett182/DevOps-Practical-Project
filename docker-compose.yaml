@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     service1:
-        image: abarrett/service1
+        image: andrewbarrett18/service1
         container_name: service1
         build: ./service1
         ports:
@@ -17,7 +17,7 @@ services:
             - DATABASE_URI=${DATABASE_URI}
 
     service2:
-        image: abarrett/service2
+        image: andrewbarrett18/service2
         container_name: service2
         build: ./service2
         ports:
@@ -26,7 +26,7 @@ services:
               protocol: tcp
 
     service3:
-        image: abarrett/service3
+        image: andrewbarrett18/service3
         container_name: service3
         build: ./service3
         ports:
@@ -35,7 +35,7 @@ services:
               protocol: tcp
 
     service4:
-        image: abarrett/service4
+        image: andrewbarrett18/service4
         container_name: service4
         build: ./service4
         ports:
