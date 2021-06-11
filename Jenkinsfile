@@ -4,6 +4,7 @@ pipeline {
         DOCKER_USERNAME = credentials('DOCKER_USERNAME')
         DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
         install = 'true'
+        DATABASE_URI = credentials('DATABASE_URI')
     }
     stages {
         stage('Install Requirements') {

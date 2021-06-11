@@ -4,4 +4,7 @@
 scp -i ~/.ssh/ansible_id_rsa docker-compose.yaml jenkins@ansible-manager:/home/jenkins/docker-compose.yaml
 
 # Deploy the Docker Stack
-ssh -i ~/.ssh/ansible_id_rsa jenkins@ansible-manager "docker stack deploy --compose-file docker-compose.yaml lottery"
+ssh -i ~/.ssh/ansible_id_rsa jenkins@ansible-manager << EOF
+    export DATABASE_URI=${DATABASE_URI}
+    docker stack deploy --compose-file docker-compose.yaml lottery
+EOF
