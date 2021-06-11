@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-prizes = [0, 1, 5, 10, 30, 100, 10000]
+prizes = [0, 3, 8, 15, 50, 300, 50000]
 
 @app.route('/prize', methods=['POST'])
 def prize():
