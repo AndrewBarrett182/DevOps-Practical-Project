@@ -15,6 +15,8 @@ services:
         environment: 
             - SECRET_KEY=${SECRET_KEY}
             - DATABASE_URI=${DATABASE_URI}
+        deploy:
+            replicas: 4
 
     service2:
         image: andrewbarrett18/service2
@@ -24,6 +26,8 @@ services:
             - target: 5001
               published: 5001
               protocol: tcp
+        deploy:
+            replicas: 4
 
     service3:
         image: andrewbarrett18/service3
@@ -33,6 +37,8 @@ services:
             - target: 5002
               published: 5002
               protocol: tcp
+        deploy:
+            replicas: 4
 
     service4:
         image: andrewbarrett18/service4
@@ -42,3 +48,5 @@ services:
             - target: 5003
               published: 5003
               protocol: tcp
+        deploy:
+            replicas: 4
