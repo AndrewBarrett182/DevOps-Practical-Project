@@ -1,6 +1,6 @@
 ---
 # tasks file for manager
 - name: Initialise a new swarm
-  community.docker.docker_swarm:
+  docker_swarm:
     state: present
   register: swarm_info
