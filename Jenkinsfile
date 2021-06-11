@@ -3,12 +3,12 @@ pipeline {
     environment {
         DOCKER_USERNAME = credentials('DOCKER_USERNAME')
         DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
-        install = 'false'
+        install = 'true'
     }
     stages {
         stage('Install Requirements') {
             steps {
-                if (env.install == 'false'){
+                if (env.install == 'true'){
                     sh 'bash jenkins/install-requirements.sh'
                 }
             }
