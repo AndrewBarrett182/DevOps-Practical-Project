@@ -1,5 +1,5 @@
 all:
-  hosts:
+  children:
     managers:
       hosts:
         ansible-manager:
@@ -8,6 +8,6 @@ all:
         worker-1:
         worker-2:
   vars:
-    ansible_user: jenkins
+    ansible_user: abarrett
     ansible_ssh_private_key_file: '~/.ssh/ansible_id_rsa'
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
