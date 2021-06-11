@@ -8,9 +8,11 @@ pipeline {
     stages {
         stage('Install Requirements') {
             steps {
-                if (env.install == 'true'){
-                    sh 'bash jenkins/install-requirements.sh'
-                }
+                script {
+                    if (env.install == 'true'){
+                        sh 'bash jenkins/install-requirements.sh'
+                    }
+                }    
             }
         }
         stage('Test') {
