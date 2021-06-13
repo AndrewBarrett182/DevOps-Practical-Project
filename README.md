@@ -158,7 +158,7 @@ A risk assessment was carried out before and after implementation. This is denot
 
 ## Testing
 
-To perform the testing for the project, pytest was used. How this works is essentially by creating a dummy test database, performing a function, and then deleting those changes. This process is repeated for as many tests written. Results are obtained through assertion such that the output value would be something known and can be checked with the test values. By explicitly asking, it is possible for the pytest command to yield a coverage report which shows the proportion of the code that has been tested.
+To perform the testing for the project, pytest was used with the help of mock testing. How this works is essentially by creating a dummy test database, performing a function, and then deleting those changes. This process is repeated for as many tests written. Results are obtained through assertion such that the output value would be something known and can be checked with the test values. By explicitly asking, it is possible for the pytest command to yield a coverage report which shows the proportion of the code that has been tested.
 
 ### Service 1 Coverage Report
 
