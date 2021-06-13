@@ -56,11 +56,11 @@ For my project, I decided to create an application for a simple lottery which co
 
   The core service that renders a Jinja2 template to establish interaction with the application. This is also responsible for the communication between the other 3 services. Data generated is stored into a MySQL database.
 
-- Service #2 + #3
+- Service #2 + #3 (GET)
 
   These are the services that generate a list of random numbers which correspond to a lottery ticket purchased along with the winning numbers for that draw.
 
-- Service #4
+- Service #4 (POST)
 
   This is the service that creates an object depending on the results of services #2 and #3. The prize determination for the draw is determined here.
 
@@ -88,6 +88,16 @@ This project uses a Jenkins CI server to handle the pipeline. It retrieves the c
 - Push the Application to DockerHub
 - Run the Ansible Playbook
 - Deploy the Application
+
+The deployment of the application is automated by using webhooks with Git to perform rolling updates on the pipeline. 
+
+The stage view of the pipeline when successful is as follows:
+
+
+
+And the stage view of the pipeline when an error occurs is as follows:
+
+
 
 If there is a fault within the build process, the application will fail to run and the error reasoning can be easily obtained through the console output.
 
