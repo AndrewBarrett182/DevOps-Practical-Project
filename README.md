@@ -152,4 +152,4 @@ The initial starting point of the application which consists of a title, generat
 
 Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
 
-![image](https://user-images.githubusercontent.com/82821693/121814879-453b1900-cc6b-11eb-804e-972d22f221c0.png)
+![image](https://user-images.githubusercontent.com/82821693/121815315-b7146200-cc6d-11eb-93e1-f3e391a8051b.png)
