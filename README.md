@@ -78,5 +78,22 @@ The ERD contains one table: lottery_tickets. Since there is only a single table 
 
 ![image](https://user-images.githubusercontent.com/82821693/121809838-5d546d80-cc56-11eb-91bc-180a9e8d2d50.png)
 
+This is the Continuous Integration (CI) pipeline for this project. A flask framework was used working in conjuction with Google Cloud Platform (GCP) Virtual Machine (VM) instances. Continuous Integration enables the development process to be more frequent and more reliable.
 
+This project uses a Jenkins CI server to handle the pipeline. It retrieves the code from the repository on GitHub and then performs these build instructions:
+
+- Install Requirements
+- Perform Testing
+- Build the Application
+- Push the Application to DockerHub
+- Run the Ansible Playbook
+- Deploy the Application
+
+If there is a fault within the build process, the application will fail to run and the error reasoning can be easily obtained through the console output.
+
+## Project Tracking
+
+To track the progress of the project, Jira was used. 
+
+https://andrewbarrett.atlassian.net/jira/software/projects/LOT/boards/2
 
