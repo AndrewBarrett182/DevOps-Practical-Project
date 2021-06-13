@@ -30,5 +30,5 @@ cd ..
 # pytest coverage service4
 
 cd service4
-python3 -m pytest --cov=service4 --cov-report term-missing --cov-report html 
+python3 -m pytest --cov=service4 --cov-report term-missing --cov-report html
 cd ..
