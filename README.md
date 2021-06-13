@@ -132,6 +132,8 @@ The cards within the board have epics assigned to them so that it is clear what 
 
 ## Risk Assessment
 
+A risk assessment was carried out before and after implementation. This is denoted by the dates at which the risks were added (07/06/2021 - before, 13/06/2021 - after). This is because new unanticipated risks can be expected in any project whilst in development.
+
 ![image](https://user-images.githubusercontent.com/82821693/121812960-e9b85d80-cc61-11eb-9a54-c78e5f6308bc.png)
 
 ## Testing
