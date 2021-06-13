@@ -72,7 +72,13 @@ The database structure for the project is displayed using an Entity Relationship
 
 ![image](https://user-images.githubusercontent.com/82821693/121809180-b1aa1e00-cc53-11eb-9255-02c4861b2cea.png)
 
-The ERD contains one table: lottery_tickets. Since there is only a single table there are no relationships.
+The ERD contains one table, lottery_tickets, which contains four attributes:
+- id: The primary key that is automatically generated through auto-incrementation
+- ticket: A list of 6 randomly generated numbers making up a lottery ticket
+- lottery: A list of 6 randomly generated numbers making up the winning numbers
+- prize: A list of the potential prizes (6) depending on how many matches there are between the ticket and the winning numbers
+
+Since there is only a single table there are no relationships.
 
 ### CI Pipeline
 
