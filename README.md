@@ -89,17 +89,13 @@ This project uses a Jenkins CI server to handle the pipeline. It retrieves the c
 - Run the Ansible Playbook
 - Deploy the Application
 
-The deployment of the application is automated by using webhooks with Git to perform rolling updates on the pipeline. 
-
-The stage view of the pipeline when successful is as follows:
+The deployment of the application is automated by using webhooks with Git to perform rolling updates on the pipeline. The stage view of the pipeline when successful is as follows:
 
 ![image](https://user-images.githubusercontent.com/82821693/121819355-7a079a00-cc84-11eb-8be2-4ee116429791.png)
 
-And the stage view of the pipeline when an error occurs is as follows:
+If there is a fault within the build process, the application will result in an  error in which the reasoning can be easily obtained through the console output. The stage view of the pipeline when an error occurs is as follows:
 
 ![image](https://user-images.githubusercontent.com/82821693/121819359-825fd500-cc84-11eb-94b0-b62776bfdf87.png)
-
-If there is a fault within the build process, the application will fail to run and the error reasoning can be easily obtained through the console output.
 
 ## Project Tracking
 
