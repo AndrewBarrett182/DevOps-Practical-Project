@@ -162,9 +162,11 @@ Clicking on the Generate button generates a lottery ticket, the winning numbers,
 
 The initial starting point of the application which consists of a title, generate button, and no database shown:
 
-
+![image](https://user-images.githubusercontent.com/82821693/121818909-1d0ae480-cc82-11eb-8383-8d8c5a4b3c62.png)
 
 Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
+
+![image](https://user-images.githubusercontent.com/82821693/121818922-285e1000-cc82-11eb-907c-bafbfbed3f85.png)
 
 ## Known Issues
 
