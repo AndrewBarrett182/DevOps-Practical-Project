@@ -148,6 +148,8 @@ The front-end design uses a Jinja2 template as the user interface. The design us
 
 The initial starting point of the application which consists of a title, generate button, and no database shown:
 
-
+![image](https://user-images.githubusercontent.com/82821693/121814877-3ce2de00-cc6b-11eb-9a89-001c18296d08.png)
 
 Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
+
+![image](https://user-images.githubusercontent.com/82821693/121814879-453b1900-cc6b-11eb-804e-972d22f221c0.png)
