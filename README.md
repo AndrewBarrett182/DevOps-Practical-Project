@@ -70,3 +70,6 @@ For my project, I decided to create an application for a simple lottery which co
 
 The database structure for the project is displayed using an Entity Relationship Diagram (ERD). This diagram displays the design of the table associated with the database. Since there is only a single table there are no relationships.
 
+![image](https://user-images.githubusercontent.com/82821693/121809180-b1aa1e00-cc53-11eb-9255-02c4861b2cea.png)
+
+
