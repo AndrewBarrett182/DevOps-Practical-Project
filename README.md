@@ -11,9 +11,13 @@
 - [Project Tracking](#project-tracking)
 - [Risk Assessment](#risk-assessment)
 - [Testing](#testing)
-  - [Instructions to run Unit Testing](#instructions-to-run-unit-testing)
-  - [Instructions to run Integration Testing](#instructions-to-run-integration-testing)
+  - [Service 1 Coverage Report](#service-1-coverage-report)
+  - [Service 2 Coverage Report](#service-2-coverage-report)
+  - [Service 3 Coverage Report](#service-3-coverage-report)
+  - [Service 4 Coverage Report](#service-4-coverage-report)
 - [Front-End Design](#front-end-design)
+  - [First Implementation](#first-implementation)
+  - [Second Implementation](#second-implementation)
 - [Known Issues](#known-issues)
 - [Future Improvements](#future-improvements)
 - [Author](#author)
@@ -59,10 +63,6 @@ For my project, I decided to create an application for a simple lottery which co
 - Service #4
 
   This is the service that creates an object depending on the results of services #2 and #3. The prize determination for the draw is determined here.
-
-- Different Implementations
-
-  Two different implementations were created for the services one of which include more numbers that can be drawn from therefore having increased prize winnings due to the lower odds of getting a match. Also, this second implementation includes showing 10 instances within the database at a time rather than 5 in the first implementation as well as a background colour change. This is so that the rolling update of the application can be seen clearly to the user.
 
 ## Architecture
 
@@ -144,7 +144,11 @@ To perform the testing for the project, pytest was used. How this works is essen
 
 ## Front-End Design
 
+Two different implementations were created for the services one of which include more numbers that can be drawn from therefore having increased prize winnings due to the lower odds of getting a match. Also, this second implementation includes showing 10 instances within the database at a time rather than 5 in the first implementation as well as a background colour change. This is so that the rolling update of the application can be seen clearly to the user.
+
 The front-end design uses a Jinja2 template as the user interface. The design used is simple and easily understandable.
+
+### First Implementation
 
 The initial starting point of the application which consists of a title, generate button, and no database shown:
 
@@ -153,3 +157,26 @@ The initial starting point of the application which consists of a title, generat
 Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
 
 ![image](https://user-images.githubusercontent.com/82821693/121815315-b7146200-cc6d-11eb-93e1-f3e391a8051b.png)
+
+### Second Implementation
+
+The initial starting point of the application which consists of a title, generate button, and no database shown:
+
+
+
+Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
+
+## Known Issues
+
+Currently there is no implementation that allows for the data within the database to be deleted or reset.
+
+## Future Improvements
+
+The future improvements for this project includes:
+- Implementation of a delete button so that records can be removed from the database.
+- Implement more ways of viewing / ordering the data within the database for the user to see.
+- Make the user interface much more prettier and inviting.
+
+## Author
+
+Andrew Barrett
