@@ -8,6 +8,10 @@
 - [Architecture](#architecture)
   - [Database Structure](#database-structure)
   - [CI Pipeline](#ci-pipeline)
+  - [Docker-Compose](#docker-compose)
+  - [Docker Swarm](#docker-swarm)
+  - [NGINX](#nginx)
+  - [Ansible](#ansible)
 - [Project Tracking](#project-tracking)
 - [Risk Assessment](#risk-assessment)
 - [Testing](#testing)
@@ -102,6 +106,22 @@ The deployment of the application is automated by using webhooks with Git to per
 If there is a fault within the build process, the application will result in an  error in which the reasoning can be easily obtained through the console output. The stage view of the pipeline when an error occurs is as follows:
 
 ![image](https://user-images.githubusercontent.com/82821693/121819359-825fd500-cc84-11eb-94b0-b62776bfdf87.png)
+
+### Docker-Compose
+
+Docker-Compose is a tool that allows multiple Docker containers to be run at once within a single command. This is done using a single configuration file: docker-compose.yaml. Each service contains a Dockerfile which make up the images for the containers.
+
+### Docker Swarm
+
+Docker Swarm is a container orchestration tool that allows for multiple nodes to be run as a network across different host machines. 
+
+### NGINX
+
+NGINX is a web server that is used as a reverse proxy or load balancer. This allows for the user to visit a URL to access the application. It handles the requests before sending them to the server.
+
+### Ansible
+
+Ansible is an open-source configuration management tool. It uses the YAML language to write playbooks which are easily read and understood. This allows the building of the environment within multiple Virtual Machines to be automated rather than manually installing the necessary software on each machine one-by-one. Commands are run over SSH so the SSH keys must be configured for all the required nodes.
 
 ## Project Tracking
 
