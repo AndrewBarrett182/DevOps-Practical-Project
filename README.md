@@ -126,18 +126,28 @@ The cards within the board have epics assigned to them so that it is clear what 
 
 To perform the testing for the project, pytest was used. How this works is essentially by creating a dummy test database, performing a function, and then deleting those changes. This process is repeated for as many tests written. Results are obtained through assertion such that the output value would be something known and can be checked with the test values. By explicitly asking, it is possible for the pytest command to yield a coverage report which shows the proportion of the code that has been tested.
 
-### Service 1
+### Service 1 Coverage Report
 
 ![image](https://user-images.githubusercontent.com/82821693/121814622-f640b400-cc69-11eb-9160-8eadfa1a10c2.png)
 
-### Service 2
+### Service 2 Coverage Report
 
 ![image](https://user-images.githubusercontent.com/82821693/121814636-08baed80-cc6a-11eb-954c-30344b1bb7a7.png)
 
-### Service 3
+### Service 3 Coverage Report
 
 ![image](https://user-images.githubusercontent.com/82821693/121814651-18d2cd00-cc6a-11eb-8329-ac05b094bc32.png)
 
-### Service 4
+### Service 4 Coverage Report
 
 ![image](https://user-images.githubusercontent.com/82821693/121814660-2425f880-cc6a-11eb-9039-ba5a8ffcbd76.png)
+
+## Front-End Design
+
+The front-end design uses a Jinja2 template as the user interface. The design used is simple and easily understandable.
+
+The initial starting point of the application which consists of a title, generate button, and no database shown:
+
+
+
+Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
