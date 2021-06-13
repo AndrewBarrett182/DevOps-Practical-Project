@@ -99,4 +99,24 @@ https://andrewbarrett.atlassian.net/jira/software/projects/LOT/boards/2
 
 ![image](https://user-images.githubusercontent.com/82821693/121810142-8aede680-cc57-11eb-9ba6-e0536ab9e33f.png)
 
+The Jira board uses a Kanban format that consists of 3 different columns:
+- To Do
+- In Progress
+- Done
+
+The cards within the board have epics assigned to them so that it is clear what the issue refers to. The epics that make up this board are:
+- Documentation
+  - This is referring to all the documents that was to be used in the creation of this README.
+- User Stories
+  - These are the implementations that correspond to a user's actions.
+- Database
+  - This refers to the table created in the database.
+- Testing
+  - Everything here refers to the testing process such as the unit testing and results.
+- Integration
+  - This refers to the deployment of the application.
+- Architecture
+  - This refers to the implementation of the 4 services used for the application.
+
+## Risk Assessment
 
