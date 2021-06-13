@@ -12,23 +12,23 @@ pip3 install -r test_requirements.txt
 # pytest coverage service1
 
 cd service1
-python3 -m pytest --cov=application --cov-report term-missing
+python3 -m pytest --cov=application --cov-report term-missing --cov-report html 
 cd ..
 
 # pytest coverage service2
 
 cd service2
-python3 -m pytest --cov=service2 --cov-report term-missing
+python3 -m pytest --cov=service2 --cov-report term-missing --cov-report html 
 cd ..
 
 # pytest coverage service3
 
 cd service3
-python3 -m pytest --cov=service3 --cov-report term-missing
+python3 -m pytest --cov=service3 --cov-report term-missing --cov-report html 
 cd ..
 
 # pytest coverage service4
 
 cd service4
-python3 -m pytest --cov=service4 --cov-report term-missing
+python3 -m pytest --cov=service4 --cov-report term-missing --cov-report html 
 cd ..
