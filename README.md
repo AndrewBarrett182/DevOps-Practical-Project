@@ -128,8 +128,16 @@ To perform the testing for the project, pytest was used. How this works is essen
 
 ### Service 1
 
+![image](https://user-images.githubusercontent.com/82821693/121814622-f640b400-cc69-11eb-9160-8eadfa1a10c2.png)
+
 ### Service 2
+
+![image](https://user-images.githubusercontent.com/82821693/121814636-08baed80-cc6a-11eb-954c-30344b1bb7a7.png)
 
 ### Service 3
 
+![image](https://user-images.githubusercontent.com/82821693/121814651-18d2cd00-cc6a-11eb-8329-ac05b094bc32.png)
+
 ### Service 4
+
+![image](https://user-images.githubusercontent.com/82821693/121814660-2425f880-cc6a-11eb-9039-ba5a8ffcbd76.png)
