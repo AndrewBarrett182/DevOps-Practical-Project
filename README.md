@@ -183,7 +183,8 @@ Currently there is no implementation that allows for the data within the databas
 The future improvements for this project includes:
 - Implementation of a delete button so that records can be removed from the database.
 - Implement more ways of viewing / ordering the data within the database for the user to see.
-- Make the user interface much more prettier and inviting.
+- Make the user interface much more aesthetically pleasing.
+- Add more tables/fields to the database to provide more information
 
 ## Author
 
