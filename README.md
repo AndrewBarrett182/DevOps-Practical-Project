@@ -97,3 +97,6 @@ To track the progress of the project, Jira was used.
 
 https://andrewbarrett.atlassian.net/jira/software/projects/LOT/boards/2
 
+![image](https://user-images.githubusercontent.com/82821693/121810142-8aede680-cc57-11eb-9ba6-e0536ab9e33f.png)
+
+
