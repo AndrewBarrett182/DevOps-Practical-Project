@@ -154,17 +154,17 @@ The initial starting point of the application which consists of a title, generat
 
 ![image](https://user-images.githubusercontent.com/82821693/121814877-3ce2de00-cc6b-11eb-9a89-001c18296d08.png)
 
-Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
+Clicking on the Generate button generates a lottery ticket and the winning numbers (numbers within 1 - 20), prize (£0, £1, £5, £10, £30, £100, £10000), and the database (displaying the last 5 draws):
 
 ![image](https://user-images.githubusercontent.com/82821693/121815315-b7146200-cc6d-11eb-93e1-f3e391a8051b.png)
 
 ### Second Implementation
 
-The initial starting point of the application which consists of a title, generate button, and no database shown:
+The initial starting point of the application which consists of a title, generate button, no database shown, and a blue background:
 
 ![image](https://user-images.githubusercontent.com/82821693/121818909-1d0ae480-cc82-11eb-8383-8d8c5a4b3c62.png)
 
-Clicking on the Generate button generates a lottery ticket, the winning numbers, prize, and the database:
+Clicking on the Generate button generates a lottery ticket and the winning numbers (numbers within 1 - 30), prize (£0, £3, £8, £15, £50, £300, £50000), and the database (displaying the last 10 draws):
 
 ![image](https://user-images.githubusercontent.com/82821693/121818922-285e1000-cc82-11eb-907c-bafbfbed3f85.png)
 
