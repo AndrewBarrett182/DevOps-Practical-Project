@@ -76,3 +76,6 @@ The ERD contains one table: lottery_tickets. Since there is only a single table 
 
 ### CI Pipeline
 
+![image](https://user-images.githubusercontent.com/82821693/121809786-22523a00-cc56-11eb-9fa5-9b6e9b420d18.png)
+
+
